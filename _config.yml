@@ -1,24 +1,17 @@
 # Header
 menu:
-  home: /
-  dropdown menu:
-    google: //google.com/
-    yahoo:  //yahoo.com/
+#  home: /
 
 extmenu:
-  github: //github.com/kywk/
-  hexo: //zespia.tw/hexo/
-  theme:
-    biture: //github.com/kywk/hexo-theme-biture
-    landscape: //github.com/tommy351/hexo-theme-landscape
-    light: //github.com/tommy351/hexo-theme-light
+  GitHub: //github.com/bearpaw/
+  Google+: //plus.google.com/+WeiYangplatero/
 
 # Content
 excerpt_link: Read More
 
-fancybox: true
+fancybox: false
 
 # Miscellaneous
-google_analytics:
-google_universal_analytics:
+google_analytics: UA-64554662-1
+google_universal_analytics: 
 rss:
