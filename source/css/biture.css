@@ -8,13 +8,15 @@ body {
   width: 100%;
   margin: 0px;
   padding: 0px;
-  background-color: #eee;
+  background-color: #fff;
   text-align: center;
   font-family: 'Helvetica Neue', 'Open Sans', 'Source Sans Pro', 'Hiragino Kaku Gothic Pro', 'Microsoft Jhenghei', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   color: #444;
 }
-
+body .pure-g [class*="pure-u"] {  
+  font-family: 'Helvetica Neue', 'Open Sans', 'Source Sans Pro', 'Hiragino Kaku Gothic Pro', 'Microsoft Jhenghei', sans-serif;
+}
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.6em;
   font-family: 'Myriad Pro', 'PT Sans', 'Lucida Grande', 'Hiragino Sans GB', 'Lantinghei TC', 'Hiragino Kaku Gothic Pro', 'Microsoft Jhenghei', sans-serif;
@@ -57,6 +59,13 @@ img {
   border: 1px solid rgba(0,0,0,0.45);
   background: #fff;
   box-shadow: rgba(0,0,0,1.0) 0px 0px 2px,rgba(255,255,255,0.15) 0px 1px 1px inset;
+}
+img.item-box {
+  max-width: 300px;
+	padding: 5px;
+  border: 1px solid #ccc;
+  background: #fff;
+  box-shadow: none;
 }
 
 /*-------------------------------------------------------------------------------------------*/
@@ -117,7 +126,11 @@ blockquote footer {
   text-align: center;
   font-size: 14px;
   line-height: 20px;
+	height: 60px;
   color: #eee;
+  /* set animation */
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 #header a, #header a:visited {
   color: #ccc;
@@ -125,24 +138,44 @@ blockquote footer {
 #header a:hover {
   color: #f60;
 }
-
-.brand {
-  display: inline-block;
-  padding: 7px 20px 5px 0;
-  font-size: 16px;
+#header.sticky{
+  position: fixed;
+  font-size: 14px;
+  line-height: 20px;
+  background: #333;
+  color: #fff;
+  border-bottom: 1px solid #222;
+	height: 50px;
 }
-
+.brand {
+  display: block;
+	width: 200px;
+	height: 38px;
+	float: left;
+	margin: 5px 0 0 0;
+  padding: 12px 20px 0px 0;
+  font-size: 16px;
+	background: url(http://www.ee.cuhk.edu.hk/~wyang/favicon.png) no-repeat;
+	background-size: 50px 50px;
+	text-indent: 60px;
+}
+#header.sticky .brand {
+	height: 28px;
+	background-size: 40px 40px;
+}
 /* Navbar */
 ul.nav-menu {
-  display: inline-block;
-  margin: 0;
+  display: block;
+	width: 200px;
+	float: right;
+  margin: 5px 0;
   padding: 0;
 }
 ul.nav-menu li {
   list-style-type: none;
   display: inline-block;
   margin: 0;
-  padding: 10px 10px;
+  padding: 12px 8px;
 }
 ul.nav-menu li a {
   text-decoration: none;
@@ -315,6 +348,7 @@ article {
 }
 
 .article-comment {
+	display: none;
   padding: 30px 0 0 0;
 }
 
@@ -531,7 +565,37 @@ pre .javascript .function {
   color: #c9c;
 }
 
-
+.show-list{
+	width: 100%;
+	float: left;
+	clear: both;
+}
+.show-list h2,
+.show-list h3 {
+	display: block;
+	width: 100%;
+	margin: 15px 0 5px 0;
+}
+.show-list ul {
+	margin: 10px 0;
+	padding: 0;
+}
+.show-list  ul li {
+	display: block;
+	width: 100%;
+	float: left;
+	padding: 15px 0px;
+	/*border-bottom: 1px solid #ccc;*/
+}
+.article-entry span.item-title {
+	font-weight: bold;
+}
+.article-entry span.italic {
+	font-style: italic;
+}
+.article-entry span.emph {
+	font-weight: bold;
+}
 /*-------------------------------------------------------------------------------------------*/
 /* 4. Biture: Footer */
 /*-------------------------------------------------------------------------------------------*/
@@ -551,7 +615,7 @@ pre .javascript .function {
   margin: 30px 0 0 0;
   padding: 20px 0 15px 0;
   font-size: .8em;
-  background: #ccc;
+  background: #eee;
   border-top: 1px solid #aaa;
 }
 

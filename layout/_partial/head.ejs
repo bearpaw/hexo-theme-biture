@@ -26,9 +26,22 @@
     <link rel="icon" href="<%- theme.favicon %>">
   <% } %>
 
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <!-- write script to toggle class on scroll -->
+  <script>
+  $(window).scroll(function() {
+      if ($(this).scrollTop() > 1){  
+          $('header').addClass("sticky");
+      }
+      else{
+          $('header').removeClass("sticky");
+      }
+  });
+</script>
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
   <link rel="stylesheet" href="<%- config.root %>css/pure-min.css" type="text/css">
   <link rel="stylesheet" href="<%- config.root %>css/biture.css" type="text/css">
+  <link rel="icon" href="favicon.png" sizes="any" type="image/svg+xml">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <%- partial('google_universal_analytics') %>
 </head>
