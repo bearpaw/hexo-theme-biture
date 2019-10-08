@@ -1,10 +1,12 @@
 # Header
 menu:
-#  home: /
+  # home: /
 
 extmenu:
+  Résumé: /cv-updated.pdf   
   GitHub: //github.com/bearpaw/
   Google+: //plus.google.com/+WeiYangplatero/
+  Slides: /presentation/
 
 # Content
 excerpt_link: Read More
@@ -12,6 +14,7 @@ excerpt_link: Read More
 fancybox: false
 
 # Miscellaneous
+favicon: /images/favicon.png
 google_analytics: UA-64554662-1
 google_universal_analytics: 
 rss:

@@ -174,7 +174,7 @@ blockquote footer {
   margin: 5px 0 0 0;
   padding: 12px 20px 0px 0;
   font-size: 16px;
-  background: url(/images/favicon.png) no-repeat;
+  background: url(http://www.ee.cuhk.edu.hk/~wyang/favicon.png) no-repeat;
   background-size: 50px 50px;
   text-indent: 60px;
 }
@@ -184,8 +184,10 @@ blockquote footer {
 }
 /* Navbar */
 ul.nav-menu {
-  display: inline-block;
-  margin: 0;
+  display: block;
+  width: 200px;
+  float: right;
+  margin: 5px 0;
   padding: 0;
 }
 ul.nav-menu li {
@@ -296,7 +298,7 @@ div.banner {
 
 div.col-icon {
   display: inline-block;
-  width: 150px;
+  width: 100px;
   margin-left: 3px;
 }
 
@@ -824,43 +826,4 @@ table tr:hover td {
 .popup .content {
   max-height: 30%;
   overflow: auto;
-}
-/*-------------------------------------------------------------------------------------------*/
-/* Slides box
-/*-------------------------------------------------------------------------------------------*/
-.slides-box {
-  width:45%;
-  float: left;
-  margin: 2%;
-}
-
-.slides-box h3 {
-  font-size: 18pt;
-}
-
-/*-------------------------------------------------------------------------------------------*/
-/* button
-/*-------------------------------------------------------------------------------------------*/
-.myButton {
-  background-color:#44c767;
-  -moz-border-radius:10px;
-  -webkit-border-radius:10px;
-  border-radius:10px;
-  border:1px solid #18ab29;
-  display:inline-block;
-  cursor:pointer;
-  color:#ffffff;
-  font-family:Arial;
-  font-size:17px;
-  padding:13px 17px;
-  text-decoration:none;
-  text-shadow:0px 1px 0px #2f6627;
-  float: right;
-}
-.myButton:hover {
-  background-color:#5cbf2a;
-}
-.myButton:active {
-  position:relative;
-  top:1px;
 }
