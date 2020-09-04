@@ -2,10 +2,9 @@
 menu:
   # home: /
 
-extmenu:
-  Résumé: /cv-updated.pdf   
+extmenu:   
   GitHub: //github.com/bearpaw/
-  Google+: //plus.google.com/+WeiYangplatero/
+  Google Scholar: https://scholar.google.com/citations?user=6QQX88UAAAAJ
   Slides: /presentation/
 
 # Content
